@@ -63,6 +63,7 @@ RUN meson setup build \
     -Dwith-init-style=none \
     -Dwith-quota=false \
     -Dwith-tcp-wrappers=false \
+    -Dwith-spotlight=false \
 &&  meson compile -C build
 
 RUN meson install --destdir=/staging/ -C build
